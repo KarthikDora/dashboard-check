@@ -1,0 +1,89 @@
+<!--Main Navigation-->
+<header>
+
+    <!-- Sidebar -->
+    <div class="sidebar-fixed position-fixed">
+
+        <a class="logo-wrapper waves-effect">
+            <img src="../../../../assets/img/verizonlogo.png" class="img-fluid" alt="">
+        </a>
+
+        <div class="list-group list-group-flush">
+
+            <a routerLink="dashboards/v1" routerLinkActive="active" class="list-group-item list-group-item-action waves-effect">
+                <i class="fa fa-columns mr-3"></i>Dashboard
+            </a>
+            <a routerLink="profiles/profile1" routerLinkActive="active" class="list-group-item list-group-item-action waves-effect">
+                <i class="fa fa-user mr-3"></i>Occupancy Sensor</a>
+            <a routerLink="tables/table1" routerLinkActive="active" class="list-group-item list-group-item-action waves-effect">
+                <i class="fa fa-thermometer-quarter mr-3"></i>Temperature Sensor</a>
+                <a routerLink="tables/table2" routerLinkActive="active" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fa fa-superpowers mr-3"></i>Energy Management</a>
+            <a routerLink="maps/map1" routerLinkActive="active" class="list-group-item list-group-item-action waves-effect">
+                <i class="fa fa-clipboard mr-3"></i>Surveillance</a>
+            <a routerLink="nonExistingPath" routerLinkActive="active" class="list-group-item list-group-item-action waves-effect">
+                <i class="fa fa-exclamation mr-3"></i>404</a>
+
+        </div>
+
+    </div>
+    <!-- Sidebar -->
+
+    <!--Navbar-->
+    <mdb-navbar [containerInside]="false" SideClass="navbar navbar-expand-lg navbar-light white">
+
+        <!-- Navbar brand -->
+        <logo class="ml-3">
+            <a class="navbar-brand" href="#">
+                <strong class="blue-text">Smart Buildings</strong>
+            </a>
+        </logo>
+
+        <!-- Collapsible content -->
+        <links>
+
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" mdbWavesEffect>Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" target="_blank" mdbWavesEffect>About US</a>
+                </li>
+            </ul>
+            <!-- Links -->
+
+            <!-- Search form -->
+            <ul class="navbar-nav nav-flex-icons">
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" target="_blank" mdbWavesEffect>
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" target="_blank" mdbWavesEffect>
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link border border-light"
+                            target="_blank" mdbWavesEffect>
+                            <i class="fa fa-github mr-2"></i>Smart GitLab
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="ml-1 nav-link border border-light rounded" mdbWavesEffect>
+                        <i class="fa fa-sign-in left"></i>Login/SignUp</a>
+                    </li>
+                </ul>
+        </links>
+        <!-- Collapsible content -->
+
+    </mdb-navbar>
+    <!--/.Navbar-->
+
+</header>
+<!--Main Navigation-->
